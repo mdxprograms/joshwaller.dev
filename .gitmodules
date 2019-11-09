@@ -1,0 +1,4 @@
+[submodule "themes/hugo-uilite"]
+	path = themes/hugo-uilite
+	url = git@github.com:uicardiodev/hugo-uilite.git
+	ignore = dirty

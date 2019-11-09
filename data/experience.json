@@ -1,0 +1,29 @@
+{
+	"title" : "Experience",
+	"experience" : [
+		{
+			"timeperiod" : "November 2013 - October 2015",
+			"company" : "Salesforce",
+			"website": "https://www.salesforce.com.com",
+			"description" : "FullStack Developer - Lead marketing web development team"
+		},
+		{
+			"timeperiod" : "October 2015 - July 2017",
+			"company" : "TrendyMinds",
+			"website": "https://www.trendyminds.com",
+			"description" : "FullStack Developer - Agency development using CraftCMS"
+		},
+		{
+			"timeperiod" : "August 2017 - July 2018",
+			"company" : "Sigstr",
+			"website": "https://www.sigstr.com",
+			"description" : "Lead FrontEnd Engineer - React and Rails development on an email marketing and sales communication platform"
+		},
+		{
+			"timeperiod" : "July 2018 - Present",
+			"company" : "Red Ventures",
+			"website": "https://www.redventures.com",
+			"description" : "FullStack Engineer - JAMstack development and automation"
+		}
+	]
+}

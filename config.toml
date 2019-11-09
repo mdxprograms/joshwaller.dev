@@ -1,0 +1,12 @@
+baseURL = "https://joshwaller.dev"
+languageCode = "en-us"
+title = "Josh Waller"
+theme = "hugo-uilite"
+
+[author]
+  name = "Josh Waller"
+  homepage = "https://joshwaller.dev"
+
+[developer]
+	name = "mdxprograms"
+	homepage = "https://joshwaller.dev"
