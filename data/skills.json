@@ -1,10 +1,11 @@
 {
-	"title" : "Skills",
-	"skills" : {
-		"Javascript" : "96",
-		"Python" : "88",
-		"Ruby" : "85",
-		"Elm" : "80",
-		"CSS" : "85"
-	}
+  "title" : "Skills",
+  "skills" : [
+    { "name": "Javascript", "rating": 96 },
+    { "name": "Python", "rating": 88 },
+    { "name": "Ruby", "rating": 85 },
+    { "name": "CSS", "rating": 85 },
+    { "name": "Elm", "rating": 80 },
+    { "name": "Clojure(Script)", "rating": 77 }
+  ]
 }
