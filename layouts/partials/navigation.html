@@ -1,0 +1,13 @@
+<select class="navigation btn btn-lg btn-dark mx-auto mb-lg-5 w-100 js-navigation">
+  <option disabled value="">Goto...</option>
+  {{ if len .Pages }}
+    {{ range .Pages }}
+      <option value="{{ .Permalink }}">
+        {{ .Title }}
+      </option>
+    {{ end }}
+  {{ end }}
+  {{ if not .IsHome }}
+    <option value="back">Back</option>
+  {{ end }}
+</select>
