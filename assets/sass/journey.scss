@@ -1,0 +1,32 @@
+#journey {
+  background: rgba(0, 0, 0, .2);
+  border-bottom-right-radius: 6px;
+  border-top-right-radius: 6px;
+  bottom: 2%;
+  box-shadow: 2px 2px 2px #888;
+  color: #fff;
+  display: flex;
+  flex-flow: column wrap;
+  left: -275px;
+  padding: 25px 5px 25px 20px;
+  position: fixed;
+  transition: all 500ms ease;
+  width: 300px;
+  z-index: 2;
+
+  &.open {
+    left: 0;
+    background: #000;
+  }
+
+  &:after {
+    background: rgba(0, 0, 0, .6);
+    content: "Recent";
+    color: #fff;
+    height: 50px;
+    padding: 12px;
+    position: absolute;
+    right: -60px;
+    bottom: 20%;
+  }
+}
