@@ -13,23 +13,48 @@ class Journey {
   }
 
   html() {
-    const Box = document.createElement("div");
-    Box.id = "journey";
+    const Box = Object.assign(document.createElement("div"), {
+      id: "journey",
+      className: "card bg-dark",
+    });
+
+    const ToggleBtn = Object.assign(document.createElement("button"), {
+      className: "btn btn-dark text-light",
+      innerHTML: "<i class='far fa-clone'></i>",
+      onclick() {
+        const isOpen = Box.classList.contains("open");
+        if (isOpen) {
+          Box.classList.remove("open");
+          Box.classList.add("closed");
+        } else {
+          Box.classList.remove("closed");
+          Box.classList.add("open");
+        }
+      },
+    });
 
     const Heading = document.createElement("h5");
     const headingText = document.createTextNode("Your recent views");
+    Heading.className = "h5 text-light";
     Heading.appendChild(headingText);
 
-    Box.appendChild(Heading);
+    const List = Object.assign(document.createElement("div"), {
+      className: "list-group",
+    });
 
     this.places.forEach((place) => {
-      const Place = document.createElement("a");
+      const Place = Object.assign(document.createElement("a"), {
+        className: "list-group-item bg-light text-dark",
+        href: place.href,
+        textContent: place.pathname,
+      });
 
-      Place.href = place.href;
-      Place.textContent = place.pathname;
-
-      Box.appendChild(Place);
+      List.appendChild(Place);
     });
+
+    Box.appendChild(ToggleBtn);
+    Box.appendChild(Heading);
+    Box.appendChild(List);
 
     return Box;
   }
@@ -54,10 +79,6 @@ class Journey {
     }
   }
 
-  toggleInit(element) {
-    console.log(element);
-  }
-
   render() {
     if (this.parent.querySelector("#journey")) {
       this.parent.replaceChild(
@@ -67,8 +88,6 @@ class Journey {
     } else {
       this.parent.prepend(this.html());
     }
-
-    this.toggleInit(this.parent.querySelector("#journey"));
   }
 }
 
