@@ -7,6 +7,7 @@
 
   {{ $navigation := resources.Get "js/navigation.js" }}
   {{ $journey := resources.Get "js/journey.js" }}
+  {{ $opts := dict "minified" true }}
   {{ $js := slice $navigation $journey | resources.Concat "js/bundle.js" }}
 
   <script src="{{ $js.Permalink }}"></script>

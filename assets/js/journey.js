@@ -1,3 +1,11 @@
+const urlToText = (url) =>
+  url === "/"
+    ? "Home"
+    : url
+        .split("/")
+        .join(" ")
+        .replace(/(^|\s)\S/g, (t) => t.toUpperCase());
+
 class Journey {
   constructor(parent = document.body, location = window.location) {
     this.location = location;
@@ -7,8 +15,6 @@ class Journey {
   }
 
   start() {
-    this.places.push(this.location);
-    this.places = this.getPlaces().concat(this.places);
     this.savePlaces();
   }
 
@@ -46,7 +52,7 @@ class Journey {
       const Place = Object.assign(document.createElement("a"), {
         className: "list-group-item bg-light text-dark",
         href: place.href,
-        textContent: place.pathname,
+        textContent: urlToText(place.pathname),
       });
 
       List.appendChild(Place);
@@ -64,6 +70,24 @@ class Journey {
   }
 
   savePlaces() {
+    this.places = this.getPlaces();
+
+    const existingPlace = this.places.find(
+      (place) => place.pathname === this.location.pathname
+    );
+
+    this.location.updated = new Date().getTime();
+
+    if (!existingPlace) {
+      this.places.push(this.location);
+    } else {
+      const placeIndex = this.places.findIndex(
+        (place) => existingPlace.pathname === place.pathname
+      );
+      existingPlace.updated = new Date().getTime();
+      this.places[placeIndex] = existingPlace;
+    }
+
     sessionStorage.setItem("places", JSON.stringify(this.places));
     this.render();
   }
@@ -73,7 +97,9 @@ class Journey {
       sessionStorage.getItem("places") &&
       sessionStorage.getItem("places") !== ""
     ) {
-      return JSON.parse(sessionStorage.getItem("places")).slice(0, 5);
+      return JSON.parse(sessionStorage.getItem("places")).sort((a, b) =>
+        a.updated < b.updated ? 1 : -1
+      );
     } else {
       return [];
     }
