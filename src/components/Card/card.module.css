@@ -1,0 +1,42 @@
+@import "../../global/variables.css";
+@value bpSmall, bpMedium, bpLarge from "../../global/breakpoints.module.css";
+
+.card {
+  background-color: var(--light);
+  border-radius: 5px;
+  box-shadow: 0 0 5px 1px var(--purple);
+  margin-bottom: 24px;
+  margin-top: 12px;
+  min-height: 200px;
+  min-width: 200px;
+  transition: width var(--transition);
+  width: 90%;
+}
+
+.cardTitle {
+  background-color: var(--dark);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  color: var(--cyan);
+  margin: 0;
+  padding: 12px;
+}
+
+@media (min-width: bpSmall) {
+  .card {
+    width: 75%;
+  }
+}
+
+@media (min-width: bpMedium) {
+  .card {
+    margin-right: 24px;
+    width: 50%;
+  }
+}
+
+@media (min-width: bpLarge) {
+  .card {
+    width: 33%;
+  }
+}
