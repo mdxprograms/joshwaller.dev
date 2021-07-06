@@ -18,6 +18,7 @@ type FlexProps = {
 
 const Flex: FC<FlexProps> = (props) => {
   const classes: string = [
+    // eslint-disable-next-line array-callback-return
     ...Object.keys(props).filter((k: string) => {
       if (k !== "children") {
         return styles[k];

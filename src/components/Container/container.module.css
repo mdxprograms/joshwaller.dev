@@ -1,0 +1,14 @@
+.container {
+  max-width: 100%;
+  padding: 12px;
+}
+
+.containerLight {
+  composes: container;
+  composes: bgLight from "../../global/colors.module.css";
+}
+
+.containerDark {
+  composes: container;
+  composes: bgDark from "../../global/colors.module.css";
+}
