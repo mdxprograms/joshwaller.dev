@@ -48,13 +48,14 @@
 
 .link {
   composes: button;
-  composes: bgCyan from "../../global/colors.module.css";
-  composes: dark from "../../global/colors.module.css";
+  composes: bgDark from "../../global/colors.module.css";
+  composes: light from "../../global/colors.module.css";
 }
 
-.link:hover {
-  background-color: var(--purple);
-  border-color: var(--cyan);
+.link:hover,
+.link:active {
+  background: var(--dark);
+  color: var(--cyan);
 }
 
 .cta {

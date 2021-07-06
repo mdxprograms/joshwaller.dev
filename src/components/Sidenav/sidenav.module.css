@@ -14,8 +14,11 @@
 
 @media (min-width: bpTablet) {
   .sidenav {
+    align-items: center;
+    background-color: var(--dark);
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: flex-end;
+    margin-right: 12px;
     right: 0;
     top: 0;
     width: 64px;
