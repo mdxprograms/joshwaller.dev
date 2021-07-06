@@ -1,5 +1,5 @@
 @import "../../global/variables.css";
-@value bpSmall, bpMedium, bpLarge from "../../global/breakpoints.module.css";
+@value bpMobile, bpTablet, bpLaptop from "../../global/breakpoints.module.css";
 
 .card {
   background-color: var(--light);
@@ -9,8 +9,12 @@
   margin-top: 12px;
   min-height: 200px;
   min-width: 200px;
-  transition: width var(--transition);
+  transition: all var(--transition);
   width: 90%;
+}
+
+.card:hover {
+  border-color: var(--cyan);
 }
 
 .cardTitle {
@@ -19,25 +23,24 @@
   border-top-right-radius: 5px;
   border: 2px solid var(--purple);
   color: var(--cyan);
-  font-size: 14px;
   margin: 0;
   padding: 12px;
 }
 
-@media (min-width: bpSmall) {
+@media (min-width: bpMobile) {
   .card {
     width: 75%;
   }
 }
 
-@media (min-width: bpMedium) {
+@media (min-width: bpTablet) {
   .card {
     margin-right: 24px;
     width: 50%;
   }
 }
 
-@media (min-width: bpLarge) {
+@media (min-width: bpLaptop) {
   .card {
     width: 33%;
   }
