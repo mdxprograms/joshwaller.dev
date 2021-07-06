@@ -1,16 +1,17 @@
 import React from "react";
 
+import Container from "../Container";
 import Flex from "../Flex";
 import Card from "../Card";
 
 const App = () => (
-  <div id="app">
+  <Container bgDark>
     <Flex row wrap justifyCenter alignCenter>
       <Card />
       <Card />
       <Card />
     </Flex>
-  </div>
+  </Container>
 );
 
 export default App;
