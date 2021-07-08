@@ -1,0 +1,69 @@
+@import "./variables.css";
+
+.light {
+  color: var(--light);
+}
+
+.cyan {
+  color: var(--cyan);
+}
+
+.green {
+  color: var(--green);
+}
+
+.orange {
+  color: var(--orange);
+}
+
+.pink {
+  color: var(--pink);
+}
+
+.purple {
+  color: var(--purple);
+}
+
+.red {
+  color: var(--red);
+}
+
+.yellow {
+  color: var(--yellow);
+}
+
+.bgDark {
+  background-color: var(--dark);
+}
+
+.bgLight {
+  background-color: var(--light);
+}
+
+.bgCyan {
+  background-color: var(--cyan);
+}
+
+.bgGreen {
+  background-color: var(--green);
+}
+
+.bgOrange {
+  background-color: var(--orange);
+}
+
+.bgPink {
+  background-color: var(--pink);
+}
+
+.bgPurple {
+  background-color: var(--purple);
+}
+
+.bgRed {
+  background-color: var(--red);
+}
+
+.bgYellow {
+  background-color: var(--yellow);
+}

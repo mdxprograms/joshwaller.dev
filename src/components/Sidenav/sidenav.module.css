@@ -1,0 +1,35 @@
+@import "../../global/variables.css";
+@value bpTablet, bpLaptop from "../../global/breakpoints.module.css";
+
+.sidenav {
+  composes: bgPurple from "../../global/colors.module.css";
+  align-items: center;
+  bottom: 0;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 12px;
+  position: fixed;
+  width: 100%;
+}
+
+@media (min-width: bpTablet) {
+  .sidenav {
+    align-items: center;
+    background-color: var(--dark);
+    flex-direction: column;
+    justify-content: flex-end;
+    right: 0;
+    width: 64px;
+  }
+}
+
+@media (min-width: bpLaptop) {
+  .sidenav {
+    background-color: var(--dark);
+    border-bottom: 2px solid var(--purple);
+    flex-direction: row;
+    justify-content: flex-end;
+    position: relative;
+    width: 100%;
+  }
+}
