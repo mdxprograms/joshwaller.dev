@@ -1,0 +1,75 @@
+#journey {
+  border-bottom-right-radius: 6px;
+  border-top-right-radius: 6px;
+  bottom: 0;
+  box-shadow: -3px 5px 10px #000;
+  color: #fff;
+  display: flex;
+  flex-flow: column wrap;
+  right: -290px;
+  padding: 25px 5px 25px 20px;
+  position: fixed;
+  width: 300px;
+  z-index: 2;
+
+  &.open {
+    animation: slide-open 150ms linear;
+    right: 0;
+  }
+
+  &.closed {
+    animation: slide-close 150ms linear;
+  }
+
+  button {
+    border-right: none;
+    box-shadow: -3px 5px 10px #000;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    left: -45px;
+    top: 20%;
+  }
+}
+
+@keyframes slide-open {
+  0% {
+    right: -290px;
+  }
+  20% {
+    right: -250px;
+  }
+  45% {
+    right: -200px;
+  }
+  65% {
+    right: -100px;
+  }
+  80% {
+    right: -50px;
+  }
+  100% {
+    right: 0;
+  }
+}
+
+@keyframes slide-close {
+  0% {
+    right: 0;
+  }
+  20% {
+    right: -50px;
+  }
+  45% {
+    right: -100px;
+  }
+  65% {
+    right: -200px;
+  }
+  80% {
+    right: -250px;
+  }
+  100% {
+    right: -290px;
+  }
+}

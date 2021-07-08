@@ -1,0 +1,1 @@
+.navigation{border-radius:0;font-size:18px;font-weight:600;position:fixed;top:0}.sidebar .navigation{position:fixed;left:0;top:0}@media(min-width:768px){.sidebar .navigation{border-radius:6px}}

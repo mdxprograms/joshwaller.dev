@@ -1,0 +1,11 @@
+.navigation {
+  border-radius: 0;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+
+  .sidebar & {
+    border-radius: 6px;
+  }
+}
