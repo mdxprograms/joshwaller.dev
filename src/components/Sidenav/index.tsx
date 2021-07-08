@@ -1,44 +1,64 @@
-import React, { FC } from "react";
-import { FiHome } from "react-icons/fi";
-import { GrProjects, GrResume, GrContact } from "react-icons/gr";
+import { FC, useState } from "react";
 
+import { IconProps } from "../../icons/iconTypes";
+import HomeIcon from "../../icons/Home";
+import BookOpenIcon from "../../icons/BookOpen";
+import Tool from "../../icons/Tool";
+import Mail from "../../icons/Mail";
 import Button from "../Button";
 
 import styles from "./sidenav.module.css";
 
-const links = [
+type Link = {
+  id: number;
+  Icon: FC<IconProps>;
+  href: string;
+  alt: string;
+};
+
+const links: Link[] = [
   {
-    Icon: FiHome,
-    link: "/",
+    id: 1,
+    Icon: HomeIcon,
+    href: "/",
     alt: "Home",
   },
   {
-    Icon: GrResume,
-    link: "/experience",
+    id: 2,
+    Icon: BookOpenIcon,
+    href: "/experience",
     alt: "Experience",
   },
   {
-    Icon: GrProjects,
-    link: "/projects",
+    id: 3,
+    Icon: Tool,
+    href: "/projects",
     alt: "Projects",
   },
   {
-    Icon: GrContact,
-    link: "/contact",
+    id: 4,
+    Icon: Mail,
+    href: "/contact",
     alt: "Contact",
   },
 ];
 
 const Sidenav: FC = () => {
-  const onLinkClick = (link: string) => {
-    console.log(link);
+  const [activeLink, setActiveLink] = useState(links[0]);
+
+  const renderIcon = ({ id, Icon }: Link) => {
+    return <Icon stroke={activeLink.id === id ? "#8be9fd" : "#f8f8f2"} />;
   };
 
   return (
     <nav className={styles.sidenav}>
-      {links.map(({ Icon, link, alt }) => (
-        <Button key={alt} variant="link" onClick={() => onLinkClick(link)}>
-          <Icon size={24} />
+      {links.map((link) => (
+        <Button
+          key={link.id}
+          variant="link"
+          onClick={() => setActiveLink(link)}
+        >
+          {renderIcon(link)}
         </Button>
       ))}
     </nav>

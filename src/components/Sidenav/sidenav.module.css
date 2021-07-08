@@ -18,9 +18,7 @@
     background-color: var(--dark);
     flex-direction: column;
     justify-content: flex-end;
-    margin-right: 12px;
     right: 0;
-    top: 0;
     width: 64px;
   }
 }
@@ -31,7 +29,6 @@
     border-bottom: 2px solid var(--purple);
     flex-direction: row;
     justify-content: flex-end;
-    margin-bottom: 24px;
     position: relative;
     width: 100%;
   }
