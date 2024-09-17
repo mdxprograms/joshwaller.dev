@@ -1,9 +1,15 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { personalInformation, summary } from "../data/resume.json";
+import ProfileImage from "../images/profile_image.jpg";
+
+const { name, email, phone, location, website, linkedin, github } =
+  personalInformation;
 ---
 
 <Layout title="Josh Waller">
   <main>
-    <h1 class="text-red-500 font-bold">hello</h1>
+    <h1 class="text-red-500 font-bold">{name}</h1>
+    <p>{summary}</p>
   </main>
 </Layout>

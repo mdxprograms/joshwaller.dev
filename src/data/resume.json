@@ -1,0 +1,158 @@
+{
+	"personalInformation": {
+		"name": "Josh Waller",
+		"location": "Avon, Indiana, United States",
+		"email": "mdx.programs@gmail.com",
+		"phone": "2178418943",
+		"linkedin": "https://www.linkedin.com/in/josh-waller",
+		"website": "https://joshwaller.dev",
+		"github": "https://github.com/mdxprograms"
+	},
+	"summary": "Experienced full stack engineer, with a broad knowledge of the engineering landscape, including front end Web Development, API integration, serverless architecture, and more",
+	"experience": [
+		{
+			"title": "Co-owner and CTO",
+			"company": "BuddhaBeard",
+			"dates": "February 2023 - Present",
+			"location": "Indianapolis, IN",
+			"responsibilities": [
+				"Implemented templates, automation, and backend services to help onboard new clients.",
+				"Created personalized websites and applications for small business owners.",
+				"Utilized AI in creating professional logos and content generation.",
+				"Helped small business owners create a strong online presence using SEO, Google Analytics, and profile updates.",
+				"Technologies: Next.js, Python, Astro, Tailwind"
+			]
+		},
+		{
+			"title": "Senior Software Engineer",
+			"company": "Red Ventures",
+			"dates": "July 2018 - February 2023",
+			"responsibilities": [
+				"Led a team of developers over a course of 4+ years.",
+				"Created flagship application to capture leads with dynamic forms for potential online education students.",
+				"Created and maintained core websites written in PHP, Ruby, and JavaScript/Node.",
+				"Scoped out majority of projects with lead designer and project manager."
+			]
+		},
+		{
+			"title": "Lead Frontend Engineer",
+			"company": "Sigstr",
+			"dates": "August 2017 - July 2018",
+			"responsibilities": [
+				"Helped re-imagine Sigstr's product with modern technologies including React and Ruby on Rails.",
+				"Created modules for easy swapping of logic and content.",
+				"Mentored junior developers on learning new technologies and strategies.",
+				"Monitored application status and applied bug fixes.",
+				"Scoped project timelines and expectations with lead designer and project manager."
+			]
+		},
+		{
+			"title": "Full Stack Engineer",
+			"company": "Costello",
+			"dates": "February 2017 - July 2017",
+			"responsibilities": [
+				"Helped create MVP for Costello app that assists sales teams in automating and tracking calls.",
+				"Utilized React, Go, and protobuf to build the application."
+			]
+		},
+		{
+			"title": "Full Stack Developer",
+			"company": "TrendyMinds",
+			"dates": "October 2015 - February 2017",
+			"responsibilities": [
+				"Created a new job portal for IU Health using CraftCMS and custom API implementation.",
+				"Mentored junior developers on project approaches, coding standards, and workflow tools.",
+				"Created a shopping cart application for an online retail store.",
+				"Developed internal tools for code reviews and monitoring existing applications."
+			]
+		},
+		{
+			"title": "Frontend Developer",
+			"company": "Salesforce",
+			"dates": "October 2014 - October 2015",
+			"responsibilities": [
+				"Migrated ExactTarget assets to Salesforce during acquisition.",
+				"Developed and maintained the code base for Salesforce's core websites.",
+				"Led a team of developers and designers to create new experiences for Salesforce.com.",
+				"Created utility applications for major Salesforce events."
+			]
+		},
+		{
+			"title": "Digital Developer",
+			"company": "ExactTarget",
+			"dates": "November 2013 - October 2014",
+			"location": "Indianapolis, IN",
+			"responsibilities": [
+				"Developed and maintained ExactTarget.com.",
+				"Worked on ExactTarget's 2014 redesign.",
+				"Built a custom Fitbit app for SXSW event.",
+				"Led development of Connections 2015 site."
+			]
+		},
+		{
+			"title": "Web Connectivity",
+			"company": "IBEW Signatory Contractor",
+			"dates": "August 2013 - November 2013",
+			"responsibilities": [
+				"Worked on union internal applications and external websites using ColdFusion."
+			]
+		},
+		{
+			"title": "Web Developer",
+			"company": "Fischer Homes",
+			"dates": "January 2013 - August 2013",
+			"responsibilities": [
+				"Worked on fischerhomes.com Wordpress website.",
+				"Maintained previous development and implemented new features."
+			]
+		},
+		{
+			"title": "Web Developer",
+			"company": "LetsPool!",
+			"dates": "May 2012 - January 2013",
+			"responsibilities": [
+				"Worked with lead developer to create an e-commerce site using PHP, MySQL, and Apache server."
+			]
+		}
+	],
+	"education": [
+		{
+			"degree": "Associate's degree",
+			"field": "Computer Systems Analysis",
+			"institution": "Ivy Tech Community College",
+			"dates": "2010 - 2012"
+		},
+		{
+			"degree": "High School Diploma",
+			"institution": "Unity High School",
+			"dates": "1998 - 2002"
+		}
+	],
+	"certifications": [
+		{
+			"name": "AWS Web Management Services",
+			"institution": "Red Ventures AWS training course",
+			"year": 2022,
+			"details": [
+				"Utilized EC2 services",
+				"Configured SMS services",
+				"Practiced load balancing setup",
+				"Uploaded and synced code bases to EC2"
+			]
+		}
+	],
+	"skills": [
+		"Behavior-Driven Development (BDD)",
+		"CSS (Tailwind)",
+		"Front-End Development",
+		"Full-Stack Development",
+		"GraphQL",
+		"HTML",
+		"Next.js",
+		"PHP",
+		"Redux.js",
+		"Responsive Web Design",
+		"Svelte",
+		"Unit Testing"
+	]
+}
