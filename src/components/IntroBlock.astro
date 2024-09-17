@@ -1,4 +1,7 @@
 ---
+import ProfileImage from "../images/profile_image.jpg";
+import { Image } from "astro:assets";
+
 type Props = {
   name: string;
   summary: string;
@@ -7,7 +10,8 @@ type Props = {
 const { name, summary } = Astro.props;
 ---
 
-<div class="space-y-2 p-6 lg:p-12 bg-secondary-500 text-center">
+<div class="space-y-2 p-6 lg:p-12 text-center lg:w-1/2 mx-auto">
   <h1 class="text-accent-200 text-h1 font-bold my-0">{name}</h1>
-  <p class="text-white max-w-96 mx-auto lg:text-lg">{summary}</p>
+  <Image src={ProfileImage} alt="profile-img" class="rounded-full mx-auto" />
+  <p class="text-white mx-auto lg:text-lg">{summary}</p>
 </div>

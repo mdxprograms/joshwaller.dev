@@ -1,11 +1,19 @@
 ---
+const pathname = new URL(Astro.request.url).pathname;
+const currentPath = pathname.slice(1);
+
 const navLinkClass =
-  "text-secondary-500 border border-transparent hover:border-secondary-500 p-2 lg:text-lg";
+  "text-accent-200 border border-transparent hover:border-accent-200 p-2 lg:text-lg";
+
+const activeClass = "border-accent-200";
+
+const getNavLinkClass = (path: string) =>
+  path === currentPath ? `${navLinkClass} ${activeClass}` : navLinkClass;
 ---
 
-<nav class="bg-white flex justify-around my-4" role="navigation">
-  <a href="/" class={navLinkClass}>Home</a>
-  <a href="/about" class={navLinkClass}>About</a>
-  <a href="/portfolio" class={navLinkClass}>Portfolio</a>
-  <a href="/contact" class={navLinkClass}>Contact</a>
+<nav class="flex justify-center my-4 space-x-4" role="navigation">
+  <a href="/" class={getNavLinkClass("")}>Home</a>
+  <a href="/about" class={getNavLinkClass("about")}>About</a>
+  <a href="/portfolio" class={getNavLinkClass("portfolio")}>Portfolio</a>
+  <a href="/contact" class={getNavLinkClass("contact")}>Contact</a>
 </nav>
