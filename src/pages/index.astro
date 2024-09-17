@@ -1,15 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { personalInformation, summary } from "../data/resume.json";
-import ProfileImage from "../images/profile_image.jpg";
-
-const { name, email, phone, location, website, linkedin, github } =
-  personalInformation;
+import { summary } from "../data/resume.json";
+import IntroBlock from "../components/IntroBlock.astro";
 ---
 
 <Layout title="Josh Waller">
-  <main>
-    <h1 class="text-red-500 font-bold">{name}</h1>
-    <p>{summary}</p>
+  <main class="container mx-auto px-4 py-8">
+    <IntroBlock name="Josh Waller" summary={summary} />
   </main>
 </Layout>

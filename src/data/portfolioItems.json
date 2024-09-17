@@ -1,0 +1,49 @@
+{
+	"portfolioItems": [
+		{
+			"title": "Streamlined Onboarding and Website Creation",
+			"company": "BuddhaBeard",
+			"date": "February 2023 - Present",
+			"situation": "As the Co-owner and CTO of BuddhaBeard, we needed to efficiently onboard new clients and create personalized websites for small business owners.",
+			"task": "Develop a system to streamline the onboarding process and create customized websites quickly.",
+			"action": "Implemented templates, automation, and backend services using Next.js, Python, Astro, and Tailwind. Utilized AI for creating professional logos and content generation.",
+			"result": "Successfully onboarded new clients more efficiently, created personalized websites for small business owners, and helped them establish a strong online presence using SEO, Google Analytics, and profile updates."
+		},
+		{
+			"title": "Dynamic Lead Capture Application",
+			"company": "Red Ventures",
+			"date": "July 2018 - February 2023",
+			"situation": "As a Senior Software Engineer at Red Ventures, we were tasked with improving the lead capture process for potential online education students.",
+			"task": "Create a flagship application to easily capture leads with dynamic forms for potential online education students.",
+			"action": "Led a team of developers over the course of 4+ years to design and implement the application. Utilized a variety of technologies and languages, including PHP, Ruby, and JavaScript/Node.js. Scoped out the majority of projects with the lead designer and project manager.",
+			"result": "Successfully created and launched the flagship application, improving the lead capture process for online education students. Maintained core websites and continuously improved the application based on user feedback and performance metrics."
+		},
+		{
+			"title": "Product Reimagination with Modern Technologies",
+			"company": "Sigstr",
+			"date": "August 2017 - July 2018",
+			"situation": "Sigstr needed to modernize their product to stay competitive in the market.",
+			"task": "Reimagine Sigstr's product using modern technologies and create modules for easy swapping of logic and content.",
+			"action": "Led the implementation of new technologies including React and Ruby on Rails. Created modular components for flexible content and logic management. Mentored junior developers in learning new technologies and strategies.",
+			"result": "Successfully modernized Sigstr's product, improving its competitiveness. Enhanced the development team's skills and capabilities. Implemented a more maintainable and flexible codebase."
+		},
+		{
+			"title": "MVP Development for Sales Automation",
+			"company": "Costello",
+			"date": "February 2017 - July 2017",
+			"situation": "Costello needed to create a Minimum Viable Product (MVP) for an app to assist sales teams in automating and tracking calls.",
+			"task": "Develop an MVP for the Costello app using modern technologies and efficient development practices.",
+			"action": "Utilized React, Go, and protobuf to build the application. Collaborated with the team to implement key features for sales call automation and tracking.",
+			"result": "Successfully created and launched the MVP for Costello, providing sales teams with a tool to automate and track calls effectively."
+		},
+		{
+			"title": "Job Portal Development for IU Health",
+			"company": "TrendyMinds",
+			"date": "October 2015 - February 2017",
+			"situation": "IU Health required a new job portal to streamline their recruitment process.",
+			"task": "Create a new job portal for IU Health using CraftCMS and custom API implementation.",
+			"action": "Developed the job portal using CraftCMS, implementing custom APIs for seamless integration with IU Health's existing systems. Mentored junior developers on project approach, coding standards, and workflow improvement tools.",
+			"result": "Successfully launched the new job portal for IU Health, enhancing their recruitment process. Improved the development team's skills and efficiency through mentorship and implementation of best practices."
+		}
+	]
+}

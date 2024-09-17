@@ -1,0 +1,26 @@
+---
+import ProfileImage from "../images/profile_image.jpg";
+import { personalInformation, summary } from "../data/resume.json";
+
+const { email, phone, location, website, linkedin, github } =
+  personalInformation;
+---
+
+<div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
+  <img
+    src={ProfileImage.src}
+    alt="Josh Waller"
+    class="w-48 h-48 rounded-full"
+  />
+  <div class="space-y-4">
+    <div>
+      <h2 class="text-accent-200 text-lg font-bold">Contact</h2>
+      <p>{email}</p>
+      <p>{phone}</p>
+      <p>{location}</p>
+      <p>{website}</p>
+      <p>{linkedin}</p>
+      <p>{github}</p>
+    </div>
+  </div>
+</div>

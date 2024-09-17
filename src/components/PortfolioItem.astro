@@ -1,0 +1,40 @@
+---
+interface Props {
+  title: string;
+  company: string;
+  date: string;
+  situation: string;
+  task: string;
+  action: string;
+  result: string;
+}
+
+const { title, company, date, situation, task, action, result } = Astro.props;
+---
+
+<div class="bg-secondary-500 shadow-md rounded-lg p-6 mb-8">
+  <h2 class="text-2xl font-bold text-accent-200 mb-2">{title}</h2>
+  <p class="text-accent-100 mb-4">{company} | {date}</p>
+
+  <div class="space-y-4">
+    <div>
+      <h3 class="text-lg font-semibold text-accent-200">Situation</h3>
+      <p class="text-white">{situation}</p>
+    </div>
+
+    <div>
+      <h3 class="text-lg font-semibold text-accent-300">Task</h3>
+      <p class="text-white">{task}</p>
+    </div>
+
+    <div>
+      <h3 class="text-lg font-semibold text-accent-400">Action</h3>
+      <p class="text-white">{action}</p>
+    </div>
+
+    <div>
+      <h3 class="text-lg font-semibold text-accent-500">Result</h3>
+      <p class="text-white">{result}</p>
+    </div>
+  </div>
+</div>

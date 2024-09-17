@@ -1,0 +1,14 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { portfolioItems } from "../data/portfolioItems.json";
+import PortfolioItem from "../components/PortfolioItem.astro";
+---
+
+<Layout title="Josh Waller">
+  <main class="container mx-auto px-4 py-8">
+    <h1 class="text-secondary-500 text-h1">Portfolio</h1>
+    <div>
+      {portfolioItems.map((item) => <PortfolioItem {...item} />)}
+    </div>
+  </main>
+</Layout>
