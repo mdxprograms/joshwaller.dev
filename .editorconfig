@@ -1,5 +1,0 @@
-root = true
-
-[*.{html,js,css,scss,md,json}]
-indent_style = space
-indent_size = 2
