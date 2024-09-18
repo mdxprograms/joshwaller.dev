@@ -1,26 +1,20 @@
 ---
-import ProfileImage from "../images/profile_image.jpg";
-import { personalInformation, summary } from "../data/resume.json";
+import { Gmail, Github, Linkedin } from "simple-icons-astro";
+import { personalInformation } from "../data/resume.json";
 
-const { email, phone, location, website, linkedin, github } =
-  personalInformation;
+const { email, linkedin, github } = personalInformation;
+
+const anchorClass = "rounded-full p-4 w-14 bg-accent-200 hover:bg-white";
 ---
 
-<div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
-  <img
-    src={ProfileImage.src}
-    alt="Josh Waller"
-    class="w-48 h-48 rounded-full"
-  />
-  <div class="space-y-4">
-    <div>
-      <h2 class="text-accent-200 text-lg font-bold">Contact</h2>
-      <p>{email}</p>
-      <p>{phone}</p>
-      <p>{location}</p>
-      <p>{website}</p>
-      <p>{linkedin}</p>
-      <p>{github}</p>
-    </div>
-  </div>
+<div class="flex justify-center space-x-4">
+  <a href={`mailto:${email}`} class={anchorClass}>
+    <Gmail class="text-[#EA4335]" />
+  </a>
+  <a href={linkedin} class={anchorClass} target="_blank">
+    <Linkedin class="text-[#0A66C2]" />
+  </a>
+  <a href={github} class={anchorClass} target="_blank">
+    <Github class="text-[#333]" />
+  </a>
 </div>
