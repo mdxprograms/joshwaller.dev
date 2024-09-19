@@ -5,7 +5,7 @@ const currentPath = pathname.slice(1);
 const navLinkClass =
   "text-accent-200 border border-transparent hover:border-accent-200 p-2 lg:text-lg";
 
-const activeClass = "border-accent-200";
+const activeClass = "!border-accent-200";
 
 const getNavLinkClass = (path: string) =>
   path === currentPath ? `${navLinkClass} ${activeClass}` : navLinkClass;
