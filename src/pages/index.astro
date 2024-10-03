@@ -1,0 +1,11 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { summary } from "../data/resume.json";
+import IntroBlock from "../components/IntroBlock.astro";
+---
+
+<Layout title="Josh Waller">
+  <main class="container mx-auto px-4 py-8">
+    <IntroBlock name="Josh Waller" summary={summary} />
+  </main>
+</Layout>

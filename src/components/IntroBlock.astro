@@ -1,0 +1,24 @@
+---
+import ProfileImage from "../images/profile_image.jpg";
+import { Image } from "astro:assets";
+
+type Props = {
+  name: string;
+  summary: string;
+};
+
+const { name, summary } = Astro.props;
+---
+
+<div class="space-y-2 p-6 lg:p-12 text-center lg:w-1/2 mx-auto">
+  <h1 class="text-accent-200 text-h1 font-bold my-0">{name}</h1>
+  <Image
+    loading="eager"
+    src={ProfileImage}
+    alt="profile-img"
+    class="rounded-full mx-auto"
+    height={150}
+    width={150}
+  />
+  <p class="text-white mx-auto lg:text-lg">{summary}</p>
+</div>
