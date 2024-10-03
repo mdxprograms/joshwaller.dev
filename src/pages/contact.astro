@@ -1,10 +1,26 @@
 ---
+import ContactForm from "../components/ContactForm";
 import Layout from "../layouts/Layout.astro";
-import ContactInfoBlock from "../components/ContactInfoBlock.astro";
+import { personalInformation } from "../data/resume.json";
+
+const anchorClass = "rounded-full p-4 w-14 bg-accent-200 hover:bg-white";
+const { email, linkedin, github } = personalInformation;
+import { Gmail, Github, Linkedin } from "simple-icons-astro";
 ---
 
 <Layout title="Josh Waller | Contact">
   <main class="container mx-auto px-4 py-8">
-    <ContactInfoBlock />
+    <ContactForm client:load />
+    <div class="flex justify-center mx-auto mt-8 space-x-4">
+      <a href={`mailto:${email}`} class={anchorClass}>
+        <Gmail class="text-[#EA4335]" />
+      </a>
+      <a href={linkedin} class={anchorClass} target="_blank">
+        <Linkedin class="text-[#0A66C2]" />
+      </a>
+      <a href={github} class={anchorClass} target="_blank">
+        <Github class="text-[#333]" />
+      </a>
+    </div>
   </main>
 </Layout>
